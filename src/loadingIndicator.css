@@ -1,0 +1,31 @@
+.loading-indicator {
+  font-size: 4rem;
+  font-weight: 200;
+  left: 50%;
+  margin-left: -25vw;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50vw;
+}
+
+.loading-indicator__container {
+  position: relative;
+  display: inline-block;
+}
+
+.loading-indicator__character {
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+.loading-indicator__progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  transition: width .2s;
+}
